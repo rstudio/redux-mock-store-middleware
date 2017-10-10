@@ -54,7 +54,7 @@ describe('state-based tests', function() {
     );
   });
   
-  describe('and side loading state', function() {
+  describe('with different initial state', function() {
     beforeEach(function() {
       // You can specify different initial state
       store = mockStore(reducers, [], {
@@ -64,7 +64,7 @@ describe('state-based tests', function() {
       })
     });
     
-    it('should work', function() {
+    it('should work (but is discouraged)', function() {
       expect(store.getState()).to.deep.equals({
         reducer1: {something: 'else'},
         reducer2: {goo: false},
