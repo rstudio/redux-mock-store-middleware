@@ -4,7 +4,9 @@ Middleware that allows you to use a fully-working store in tests!
 
 ## Installation
 
-TODO
+```bash
+npm install --save-dev redux-mock-store-middleware
+```
 
 ## Usage
 
